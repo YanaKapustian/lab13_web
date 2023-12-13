@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git commands</title>
+    <link rel="stylesheet" href="git_commands.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="titles">
+        <h3 class="title">Мій особистий блог</h3>
+        <p class="subtitle">Капустян Яна</p>
+      </div>
+      <div class="options">
+        <ul>
+          <li>Вхід</li>
+          <li><a href="register.html">Реєстрація</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="column-container">
+        <div>
+          <div class="part">
+            <h1 class="column-title blue">Create a Repository</h1>
+
+            <p>From scratch - Create a new local repository</p>
+            <p><b>$ git init [project name]</b></p>
+
+            <p>Download from an existing repository</p>
+            <p><b>$ git clone my_url</b></p>
+          </div>
+          <div class="part">
+            <h1 class="column-title dark-blue">Observe your Repository</h1>
+
+            <p>List new or modified files not yet committed</p>
+            <p><b>$ git status</b></p>
+
+            <p>Show the changes to files not yet staged</p>
+            <p><b>$ git diff</b></p>
+
+            <p>Show the changes to staged files</p>
+            <p><b>$ git diff -cached</b></p>
+
+            <p>Show all staged and unstaged file changes</p>
+            <p><b>$ git diff HEAD</b></p>
+
+            <p>Show the changes between two commitids</p>
+            <p><b>$ git diff commitl commit2</b></p>
+
+            <p>List the change dates and authors for a file</p>
+            <p><b>$ git blame [file]</b></p>
+
+            <p>Show the file changes for a commit</p>
+            <p><b>$ git show [commit]: [file]</b></p>
+
+            <p>Show full change history</p>
+            <p><b>$ git log</b></p>
+
+            <p>Show change history for file/directory including diffs</p>
+            <p><b>$ git log -p [file/directory]</b></p>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="column-title light-green">Working with Branches</h1>
+
+          <p>List all local branches</p>
+          <p><b>$ git branch</b></p>
+
+          <p>List all branches, local and remote</p>
+          <p><b>$ git branch -av</b></p>
+
+          <p>Switch to a branch, 'my_branch', and update working directory</p>
+          <p><b>$ git checkout my_branch</b></p>
+
+          <p>Create a new branch called 'new_branch'</p>
+          <p><b>$ git branch new_branch</b></p>
+
+          <p>Delete the branch called 'my_branch'</p>
+          <p><b>$ git branch -d my_branch</b></p>
+
+          <p>Merge branch 'branch_a' into branch 'branch_b'</p>
+          <p><b>$ git checkout branch_b</b></p>
+          <p><b>$ git merge branch_a</b></p>
+
+          <p>Tag the current commit</p>
+          <p><b>$ git tag my_tag</b></p>
+        </div>
+
+        <div>
+          <h1 class="column-title green">Make a change</h1>
+
+          <p><b>Stages the file, ready for commit</b></p>
+          <p><b>$ git add [file]</b></p>
+
+          <p>Stage all changed files, ready for commit</p>
+          <p><b>$ git add .</b></p>
+
+          <p>Commit all staged files to versioned history</p>
+          <p><b>$ git commit -m "commit message"</b></p>
+
+          <p>Commit all your tracked files to versioned history</p>
+          <p><b>$ git commit -a -m "commit message"</b></p>
+
+          <p>Unstage file, keeping the file changes</p>
+          <p><b>$ git reset [file]</b></p>
+
+          <p>Revert everything to the last commit</p>
+          <p><b>$ git reset --hard</b></p>
+        </div>
+
+        <div>
+          <div class="part">
+            <h1 class="column-title orange">Synchronization in Git</h1>
+
+            <p>Get the latest changes from origin (no merge)</p>
+            <p><b>$ git fetch</b></p>
+
+            <p>Fetch the latest changes from origin and merge</p>
+            <p><b>$ git pull</b></p>
+
+            <p>Fetch the latest changes from origin and rebase</p>
+            <p><b>$ git pull --rebase</b></p>
+
+            <p>Push local changes to the origin</p>
+            <p><b>$ git push</b></p>
+          </div>
+
+          <div class="part">
+            <h1 class="column-title red">Finally!</h1>
+
+            <p>When in doubt, use <code>git help</code></p>
+            <p><b>$ git command --help</b></p>
+
+            <p>
+              Or visit
+              <a href="https://training.github.com/" target="_blank"
+                >GitHub Training</a
+              >
+              for official GitHub training
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h4>
+        Всі права захищено</br> Розробниця: студентка групи 303-ТН Капустян Я.В.
+      </h4>
+    </div>
+  </body>
+</html>
